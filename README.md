@@ -1,44 +1,24 @@
-# AHC - ASCII Hyper Coder v1.5m User Guide
+### AHC - ASCII Hyper Coder: Overview
 
-## Introduction
-AHC - ASCII Hyper Coder is a medium-complexity encryption tool that converts text into encrypted form using ASCII values. This tool mixes in numbers based on user-provided parameters, mixing and key, to produce a unique encrypted message. It also supports decoding to retrieve the original text.
+AHC - ASCII Hyper Coder is an encryption tool designed to transform text into a secure, encoded format using ASCII values and numerical mixing. This tool allows users to specify parameters (`mixing` and `key`) to customize the encryption process, ensuring the encoded text is unique and challenging to decode without the correct settings.
 
-## Getting Started
-When you start the program, you will see a welcome message with instructions. You can choose to either encrypt (`code`) or decrypt (`decode`) a message.
+#### Features:
+- ASCII Conversion: Converts text characters into their corresponding ASCII values.
+- Numerical Mixing: Adds a specified numeric value (`mixing`) to each ASCII value for encryption.
+- Key Integration: Appends a numeric key to further modify the ASCII values during encryption.
+- Decryption Capability: Supports decryption using extracted mixing and key parameters from encrypted text.
+- File Handling: Includes functionality to save both original and encrypted messages to a file (`coded.txt`).
 
-## Commands
-1. code - Use this command to encrypt a message.
-2. decode - Use this command to decrypt a previously encrypted message.
+#### Usage:
+1. Encryption: Enter text, mixing, and key parameters to encrypt messages.
+2. Decryption: Provide encrypted text to retrieve the original message using extracted parameters.
 
-## Encryption Process
-1. Enter Text: Input the text you want to encrypt.
-2. Enter Mixing: Input a number between 1 and 9. This number will be added to the ASCII value of each character.
-3. Enter Key: Input another number between 1 and 9. This number will be appended to the end of the ASCII value of each character.
+#### Instructions:
+- Start: Launch the program and follow on-screen prompts.
+- Commands: Use `code` for encryption and `decode` for decryption.
+- Parameters: Ensure mixing and key values are between 1 and 9 for effective encryption.
 
-Example:
->>> code
-Enter Text: Hello world
-Enter Mixing (min - 1, max - 9): 2
-Enter Key (min - 1, max - 9): 5
+#### Security Note:
+- Customize mixing and key parameters for enhanced security and uniqueness of encrypted messages.
 
-The program will display and save the encrypted text along with the parameters used.
-
-## Decryption Process
-1. Enter Text: Input the encrypted text. The program will automatically extract the mixing and key parameters from the text to decrypt it.
-
-Example:
-
->>> decode
-Enter Text: [your encrypted text here]
-
-## Detailed Description of Functions
-
-- file_write(text): Saves the text to coded.txt file.
-- coding(text, mixing, key): Encrypts the text using the provided mixing and key parameters.
-- decoder_main(text, mixing, key): Decrypts the text using the provided mixing and key parameters.
-- search_mix_and_key(text): Extracts the mixing and key parameters from the encrypted text for decryption.
-
-## Note
-Ensure the mixing and key parameters are within the specified range (1-9) for proper functioning of the encryption and decryption process.
-
-Start encrypting and decrypting your messages securely with AHC - ASCII Hyper Coder!
+AHC - ASCII Hyper Coder provides a straightforward yet effective approach to securing textual data through customizable encryption techniques.
